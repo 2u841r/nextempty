@@ -8,6 +8,6 @@ export default nextConfig;
 
 import { initOpenNextCloudflareForDev } from "@opennextjs/cloudflare";
 
-if (process.env.NODE_ENV === "development" && !process.env.VERCEL) {
+if (!process.env.VERCEL) {
   initOpenNextCloudflareForDev();
 }
