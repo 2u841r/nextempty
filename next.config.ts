@@ -14,6 +14,8 @@ for (let i = 65; i <= 90; i++) {
 }
 
 console.log(process.env.VERCEL);
+console.log(!process.env.VERCEL);
+
 
 if (!process.env.VERCEL) {
   initOpenNextCloudflareForDev();
